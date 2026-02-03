@@ -1,0 +1,585 @@
+Welcome to python notes!!!
+
+. First talking about its installation, check the version on your device in cmd type "python--version". If you have the python installed already you can find the version of that   particular verssion else you can download from this link:
+
+-
+
+. Python is made by Gauido Van Raosson in year 1989. current version of python is 13.14
+. Python was named behind an comeddy show "Monty Python`s Circus"
+
+Deep Dive...
+
+1) Types of Modes to Run Python Programs...
+
+1. Interpreter Mode.(power shell)
+2. Script Mode.(IDLE = Integrated Developed Learning Environment)
+
+> Extenssion of python file is ".py"
+> You can also visit IDLE through cmd by typing "py-m idlelid"
+> Talking about running programs in cmd => "python example.py"
+
+summary of cmd in python 1.to check verssion 2. to use it as power shell 3. to open IDLE 4. to open particular program file   
+
+How to open Python ? 
+
+1. press window key
+2. press IDLE
+3. look at top left corner of IDLE window see for file 
+4. press open 
+5. now nevigate to your files
+
+2) "print" function in python.
+
+syntax: print('xyz')
+
+> basically you can print your customized message using print function of python
+
+. Basic info about print function in python
+
+	1.uses by default end = "\n"(new line) at end of message
+	> so when you are writing messive code and wanted to leave an single line so you can keep "print()"
+
+	2.uses by default sep = " "(space) between elements of print message
+	> so you can customize your own seperator i.e "-",",",etc...
+
+3) Variables in Python.
+
+Syntax : name of variable = value
+
+Meaning : A countainor which stores some data is known as variable
+
+Basic rules for making variables in python.
+
+	1. Name must be start with an alphabet
+	2. Variable name cannot Countain white space
+	3. Variable name cannot be start with any special charactor and number
+	4. variable name cannot be same as a key word
+
+> What is key word : An reserved word which meaning is to do something in python
+	ex: if,else,elif,while,for,break....
+
+4) Data type in python.
+
+1) Premative Datatype
+
+	a. int ===========> Integer > i.e = 1,2,3,4     (natural numbers)
+	b. float =========> Float   > i.e = 1.2,1.3,4.5 (decimal numbers) 
+	c. str ===========> String  > i.e = 'om','vaja' (all noemal character of key board)
+	d. bool ==========> Boolean > i.e = True,False
+	e. complex =======> Complex > i.e = 2x+y        (Imaginary numbers)
+
+2) Collection Datatype
+	
+	a. set
+	b. frozen set
+	c. list
+	d. tupple
+	e. dictionary
+
+5)Exploration of Collection Data Type....
+
+5.1).List = A collection of multiple Elements of dofferent datatype
+	
+> denoeted by []
+> index value right to left is 0 and left to right is -1
+> list is mutable
+
+- possible operations on list:
+	
+1. Indexing
+2. Slicing
+3. Crud Operations
+	i. create
+	ii. read
+	iii. update
+	iV.  delete
+
+- perfoming operations
+
+> create : a = [1,2,3,4,5]
+
+> read : print(a)
+
+> update : a[0] = 0 (new list will be [0,1,2,3,4,5])
+
+> delete : 1. using del
+		del a or del a[1]
+	
+           2. using pop
+		 a.pop()
+
+> Indexing : to call elements as per respective index.
+		syntax : variable[index value] 
+		example : print(a[1]) ==> output : 1 (after updation of 0)
+
+> slicing : to call multiple elements from list.
+		syntax : variable[start:end:step] ====> by default start = 0,end = length of data(excluding), step = 1
+		example : print(a[1:4:1]) ==> output : 2,3,4
+
+other then this operations when we do . after any list we found some build in methords to perform with list such as:
+
+(apply this after calling variable of list i.e => a =[1,2,3,4,5] then start this operation by a.(operation))
+
+1. append()  : use to add element`s , by default add at end
+2. insert()  : to add with index
+3. extend()  : to join another list i.e => extend(add list to add)
+4. remove()  : to remove elements with value
+5. pop()     : to remove elements with index
+6. index()   : to give index of given value i.e =>  index('om') , output : 1
+7. count()   : give how many times given value present in list ? i.e => count('om') , output : 1 time or 3 times etc
+8. sort()    : sort the list
+9. reverse() : flips the order of the list
+10.copy()    : give copy of particular list
+
+5.2). Tupple = collection os multiple elements with same or different data type
+
+> denoted by ()
+> index value right to left is 0 and left to right is -1
+> Tupple is immutable
+
+Because Tupple is immutable it cannot be updated,inset
+
+- possible operations on Tupple  
+
+1.Indexing
+2.Slicing
+3.Create
+4.Read
+5.delete
+
+- perfoming operations:
+
+> Create   : a = (1,2,3,4,5)
+> Read     : print(a)
+> Indexing : print(a[1]) ==> output = 2
+> Slicing  : print(a[::])==> output = whole tupple as it is
+> Delete   : 1. using del
+		del a or del a[1]
+	
+             2. using pop
+		 a.pop()
+ 
+other then this operations when we do . after any list we found some build in methords to perform with list such as:
+
+(apply this after calling variable of Tupple i.e => a =(1,2,3,4,5) then start this operation by a.(operation))
+
+> count() : Count particular value
+> index() : give index of particular value
+
+5.3).Set = A collection of unique elements of either same or different datatype
+
+> Set is mutable
+> Do no have any fixed index of set 
+> it stores all elements in random order
+> denoted by {}
+> we cannot manually add element in set but we can transfer one element of set to other
+
+- possible operations on Set
+
+1 Update
+2.Create
+3.Read
+4.delete
+
+- perfoming operations:
+
+1.create : a = {1,2,3,4,5}
+2.read   : print(a)
+3.update : a.update(b) ==> output : will shoe set a + b
+4.delete : only using del:
+		del a
+
+other then this operations when we do . after any list we found some build in methords to perform with list such as:
+
+(apply this after calling variable of Set i.e => a ={1,2,3,4,5} then start this operation by a.(operation))
+	   
+1.add()          : add only element but of other set
+2.update()       : add multiple element but of other set
+3.remove()       : to remove  any element by value
+4.discard()      : to remove specific item and do not show error if not exists
+5.pop()          : to remove element by indax value 
+6.intersection() : to show same elements of two set
+7.union()        : to show all elements of both set
+8.difference()   : to show elements of specific set
+9.clear()        : to delete set 
+
+5.4).Frozen set = A collection of unique elements
+
+> denoted by {}
+> frozen set is immutable
+
+- possible operations on Frozen set
+
+1. Intersection
+2. Union
+3. difference
+4. Read
+5. Create
+
+- perfoming operations:
+
+1. Intersection  : a.intersection(b)
+2. Union         : a.union(b)
+3. difference    : a.difference(b)
+4. Read          : print(a)
+5. Create        : frozenset(a)
+
+other then this operations when we do . after any list we found some build in methords to perform with list such as:
+
+(apply this after calling variable of frozen Set i.e => a ={1,2,3,4,5} then start this operation by a.(operation))
+
+1.isdisjoin() : true if two sets have no common items
+2.issubset()  : true if one element is subset of other
+
+5.5).Dictionary = A collection of multiple elements in form of key and value pairs
+
+> denoted by {}
+> Dictionary is mutable
+> Each key must be unique
+> indixing is not possibe by index values but possible by keys
+> update and insert syntax is same
+
+- possible operations on dictionary
+
+1. Indixing
+2. Update
+3. Delete
+4. Read
+5. Create
+
+- perfoming operations:
+
+> Create   : a = {'name':'om','lastname':'vaja'}
+> Read     : print(a)
+> indexing : print(a['name'])
+> Update   : a['name'] = 'Student Name'
+> Delete   : del a
+
+other then this operations when we do . after any list we found some build in methords to perform with list such as:
+
+(apply this after calling variable of frozen Set i.e => a ={1,2,3,4,5} then start this operation by a.(operation))
+
+1.get()        : gives value of entered key but avoids erroe 
+2.update()     : updates existing to new dict
+3.setdefault() : return value if not available insert one
+4.keys()       : return all key
+5.values()     : return all values
+6.items()      : returns values and key
+7.pop()	       : removes entered key and its value
+8.clear()      : make dictionary empty
+ 
+5.6) There is also one important data type known as list of dictionary:
+
+> list of dictionary basically mean dictionaries in list
+> list if dictionary is mutable
+
+- possible operations on list dictionary
+
+1. Indexing
+2. Updating
+3. Inserting and Deleting
+4. Slicing
+
+- perfoming operations on specific example:
+
+students = [
+	   {'id':1,'Name':'Alice':'Grade':'A'}	   
+	   {'id':2,'Name':'Bob':'Grade':'B'}
+           {'id':3,'Name':'Charlie':'Grade':'C'}
+           ]
+
+1.Indexing                   : print(students[1]['name']) ===> Alice
+2.Updating                   : print(student[0]['grade'] = A+ ) ===> Alice`s Grade is updated to A+ 
+3.Inserting/add and deleting : new_student = {"id":4,"name":"David","Grade":"B"}
+			       students.append(new_student)
+4.Deleting                   : students[0].pop('Name') ===> output = Alice name is removed...
+
+other operations needs to be practiced:
+
+1. add a new row:
+
+> use append() students .append({'id':104,'name':'om','marks':88})
+
+2. access a row:
+
+> use index[] first_students[0]
+
+3. access a specific info in row:
+
+> index + key
+> print(students[1]['name'])
+
+4. remove a row:
+
+> use.pop()
+>students.pop(2) removes Charlie
+
+6) what are operators in python ?
+
+> its an symbol to perform certain operations on perants
+
+operations = symbol
+operants = to be perform upon
+
+Types of operators in python...
+
+1. Arthmetic operators ============> +,-,*,/,**,%
+2. Comperession operators =========> ==,!=,<,>,<=,>=
+3. Assignment operators ===========> =,+=,-=,*=,/=,//=,%=
+4. Logical operators ==============> and,or,not
+5. Identity operators =============> is,not is
+6. Membership operators ===========> in not in
+
+7) Type casting constructors in python....
+
+> To convert a valur from one datatype to another
+
+a. premitive constructors:
+
+1. int to float
+2. float to int
+3. str to bool
+4  bool to str
+5. etc...
+
+b. collection constructors:
+
+1. list to tupple
+2. tupple to list
+3. set to list
+4. list to set
+5. etc...
+
+8) operator precidence:
+
+> In a given mathematical order of execution each operator along with its accociativity is known as operator precidence
+
+
+1. ()
+2. **
+3. *,/,//,%
+4. +,-
+5. =
+
+9) Control structure and looping in python
+
+> Control structure
+
+1. Sequentical structure
+2. Conditional structure (if,elif,else)
+3. Repetational structure (loop)
+	i enter control loop
+		> while loop
+		> for loop
+	ii exit control loop
+		do not exists in python
+4. Jump control Statement
+
+
+9.1) if,if else,elif
+
+> if statement:	
+	if condition:
+		body
+> if else:
+	if condition:
+		body
+	else:
+		body
+> if elif:
+	if condition:
+		body
+	elif condition:
+		body
+	elif condition:
+		body
+	else:
+		body
+
+9.2) Entry controll loop:
+	
+	1. While loop 2. For loop
+
+	1. While loop
+
+	> syntax: initialization
+			While condition:
+		               body
+			increment/decrement
+
+	2. For loop
+
+	> Syntax: for i in range(start:end:step)
+			print(i)	
+			
+9.3) Jump control statements 
+	
+	1.break      = to terminate the current block 
+	2. continew  = to skip current iteratiom
+	3. Pass      = use as place holder
+
+=> note : while loop do not support continew 
+
+
+10). Match case
+
+> primary use to create menu driven programs and difference between if elif and match case is that we cannot compare equality of the values within match case
+
+> Syntax:
+
+match variable/value:
+	case value 1:
+		body
+	case value 2:
+		body
+	case value 3:
+		body
+	case _:
+		body 
+
+11). Flowchart and Algorithm in python
+
+11.1) Flowchart
+
+> it is a pictorial representation of our algorithm
+
+11.2) Algorithm
+
+> it is a step by step process to list down all steps involved to solve a specific problem
+
+12) Functions in python
+
+> A block of code that is resuable .
+
+types:
+
+1. build in function:
+	i.e ===> print(),input(),Type(),id(),......etc
+
+2. user define functions (udf):
+
+> A function that is made by user
+> We can create user define function by following types:
+
+2.1) types of user define functions:
+
+a. Take nothing,Return nothing
+b. Take something,Return nothing
+c. Take nothing,Return something
+d. Take something,Return something
+
+syntax: def function_name (parameters)
+		body
+		return value
+
+syntax to call: function_name() 
+
+2.2) type of functional arguments:
+
+1. required positional argument
+2. optional argument
+	i. arbitary argument (Tupple)
+	ii. keyword argument (Dictionary)
+3. default argument
+
+2.3) document string
+
+> A document for any objects in python such as funaction , class or package
+
+2.4) how to create a dockstring?
+
+> we must have to write a dockstring as a multi line string writing a very first line of our function , class, modulr , or package
+
+2.5) how to access doc string
+
+1. using __doc___attribute
+2. using help() function
+
+ 
+13) Function Recursion.
+
+> A function call itself until a certain condition
+
+14) Lambda Function
+
+> Function without name also known as ananynomous function
+> This function does not have multiline body
+> this function must return some value or expression
+
+synatx: lambda arguments:Expression
+
+15) Global keyword 
+
+> using global keyword we can access global variable in a local scope
+
+16) Array
+
+> A collection of multiple elements with same datatype
+> we can create array using list in python
+
+types of array.....
+
+1. Dimentional array (1D array)
+2. MultiDimentional Array (2D,3D,4D,5D,etc)
+
+16.1) 1D array
+
+> A collection of multiple element with same datatype
+> generally we can create an array using a list in python
+
+
+- possible operations on 1D array:
+	
+1. Indexing
+2. Slicing
+3. Crud Operations
+	i. create
+	ii. read
+	iii. update
+	iV.  delete
+
+- perfoming operations
+
+> create : a = [1,2,3,4,5]
+
+> read : print(a)
+
+> update : a[0] = 0 (new array will be [0,1,2,3,4,5])
+
+> delete : 1. using del
+		del a or del a[1]
+	
+           2. using pop
+		 a.pop()
+
+> Indexing : to call elements as per respective index.
+		syntax : variable[index value] 
+		example : print(a[1]) ==> output : 1 (after updation of 0)
+
+> slicing : to call multiple elements from list.
+		syntax : variable[start:end:step] ====> by default start = 0,end = length of data(excluding), step = 1
+		example : print(a[1:4:1]) ==> output : 2,3,4
+
+other then this operations when we do . after any list we found some build in methords to perform with list such as:
+
+(apply this after calling variable of array i.e => a =[1,2,3,4,5] then start this operation by a.(operation))
+
+1. append()  : use to add element`s , by default add at end
+2. insert()  : to add with index
+3. extend()  : to join another list i.e => extend(add list to add)
+4. remove()  : to remove elements with value
+5. pop()     : to remove elements with index
+6. index()   : to give index of given value i.e =>  index('om') , output : 1
+7. count()   : give how many times given value present in list ? i.e => count('om') , output : 1 time or 3 times etc
+8. sort()    : sort the list
+9. reverse() : flips the order of the array
+10.copy()    : give copy of particular array
+
+
+
+
+
+
+
+
+     
