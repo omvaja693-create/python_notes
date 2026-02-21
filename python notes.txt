@@ -576,7 +576,201 @@ other then this operations when we do . after any list we found some build in me
 10.copy()    : give copy of particular array
 
 
+=====================================oop======================================
 
+
+
+=============================
+OBJECT ORIENTED PROGRAMMING (PYTHON)
+=============================
+1️⃣ Class & Object
+
+Class:
+A blueprint for creating objects.
+
+Object:
+An instance of a class.
+
+Example:
+
+class Car:
+    def __init__(self, brand):
+        self.brand = brand
+
+c1 = Car("BMW")
+c2 = Car("Audi")
+
+Here:
+
+Car is class
+
+c1, c2 are objects
+
+2️⃣ self Keyword
+
+self refers to the current object.
+
+It connects object data to class methods.
+
+Example:
+
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+self.name creates an instance variable.
+
+Without self, variables won’t belong to object.
+
+3️⃣ del Keyword & del()
+
+del removes a reference to an object.
+
+Destructor: __del__()
+It runs when object is destroyed (reference count becomes 0).
+
+Example:
+
+class Test:
+    def __del__(self):
+        print("Object destroyed")
+
+Garbage Collection:
+Python automatically destroys object when no references are left.
+
+4️⃣ Encapsulation
+
+Encapsulation means:
+Hiding data from direct access.
+
+Types of variables:
+
+Public:
+
+self.x
+
+Protected (by convention):
+
+self._x
+
+Private (name mangled):
+
+self.__x
+5️⃣ Name Mangling
+
+If you write:
+
+self.__x = 10
+
+Python internally changes it to:
+
+_ClassName__x
+
+Example:
+
+print(obj._ClassName__x)
+
+This is not true privacy, just protection.
+
+6️⃣ Constructor
+
+Constructor:
+Special method that runs when object is created.
+
+def __init__(self):
+
+Used to initialize object data.
+
+7️⃣ Destructor
+def __del__(self):
+
+Runs when object is destroyed.
+
+Triggered when:
+
+Reference count becomes 0
+
+Program ends
+
+Garbage collector runs
+
+8️⃣ Polymorphism
+
+Polymorphism means:
+Same method name, different behavior.
+
+Types:
+
+A) Method Overloading
+Python simulates it using:
+
+Default arguments
+
+*args
+
+Example:
+
+def add(self, a, b, c=0):
+    return a + b + c
+
+B) Method Overriding
+Child class redefines parent method.
+
+Example:
+
+class A:
+    def show(self):
+        print("A")
+
+class B(A):
+    def show(self):
+        print("B")
+9️⃣ super()
+
+Used to call parent class method or constructor.
+
+Example:
+
+super().__init__(name)
+🔟 issubclass()
+
+Checks inheritance relationship.
+
+issubclass(Child, Parent)
+
+Returns True or False.
+
+Inheritance is transitive.
+
+1️⃣1️⃣ Abstraction
+
+Abstraction means:
+Hiding implementation details and showing only essential features.
+
+Implemented using abc module.
+
+Example:
+
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+
+    @abstractmethod
+    def area(self):
+        pass
+
+If a class has even one abstract method,
+its object cannot be created.
+
+Child must implement all abstract methods.
+
+🔥 Quick Differences
+
+Encapsulation → Hiding data
+Abstraction → Hiding implementation
+
+Overloading → Same method, different parameters
+Overriding → Child changes parent method
 
 
 
